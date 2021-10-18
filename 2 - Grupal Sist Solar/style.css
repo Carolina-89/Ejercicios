@@ -1,0 +1,13 @@
+.menu {
+    display:flex;
+    flex-wrap: nowrap;
+    background-color:olive ;
+    border-radius: 5px;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    justify-content: space-between;
+}
+  
+.contenido {
+background-color:peachpuff;
+font-family:Georgia, 'Times New Roman', Times, serif ;
+}
