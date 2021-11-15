@@ -1,18 +1,10 @@
 //// EJERCICIO CON BUCLES ////
 
-// 1) VER
+// 1) Mostrar los primeros 10 números naturales.
 /*
-let numeroUsuario = prompt('Ingrese un numero');
-
-for(let i = 0; i < numeroUsuario; i++){
-    alert(i + '\n');
+for (let i = 1; i < 11; i++) {
+  alert(i); 
 }
-
-// let i;
-// for( i = 0; i < 11; i++){
-//     alert(i);
-// }
-
 */
 
 // 2) Solicitar al usuario que ingrese 5 números y mostrar la suma de ellos.
@@ -91,16 +83,6 @@ do {
 
 // 11) Realizar un programa que pida la base y el exponente y calcule la potencia
 /*
-a) Modo facil tramposo
-let base = parseInt(prompt("Ingrese la base"));
-let exponente = parseInt(prompt("Ingreses el exponente"));
-let potencia = 0;
-
-alert(potencia = Math.pow(base, exponente));
-*/
-
-// b) Modo correcto
-/*
 const base = parseInt(prompt("Ingrese la base"));
 const exponente = parseInt(prompt("Ingrese el exponente"));
 let r = 1;
@@ -158,5 +140,19 @@ for (let i = 0; i < numero; i++){
 */
 
 // 15) Solicitar al usuario que ingrese una lista de supermercado y al final mostrar todos los items separados por comas. 
-let items = prompt("Ingrese su lista de supermercado");
+
+alert("Prepare su lista de supermercado!");
+let articulo;
+let lista = [];
+let continuar;
+let i = 0;
+
+do {
+  articulo = prompt("Ingrese un articulo de su lista");
+  lista.push(" " + articulo);
+  continuar = confirm("Desea seguir agregando articulos?");
+  i++;
+} while (continuar == true);
+
+alert(lista.join());
 
