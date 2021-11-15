@@ -1,4 +1,4 @@
-//// EJERCICIO CON BUCLES ////
+//// EJERCICIOS CON BUCLES ////
 
 // 1) Mostrar los primeros 10 números naturales.
 /*
