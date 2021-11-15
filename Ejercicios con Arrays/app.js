@@ -59,17 +59,6 @@ console.log(ciudades); // ej: ingresando 4 muestra desde NY hasta Roma
  
 // b:
 
-/* quitarCiudades = ciudades.splice(-quitarCiudades);
+quitarCiudades = ciudades.splice(-quitarCiudades);
 console.log(ciudades); // ej: ingresando 4 muestra Bs As hasta La Paz
- */
 
-
-// 4) Crear un array de 8 posiciones con nombres de artistas musicales y mostrar POR SEPARADO:
-// a-Su longitud
-// b-El último elemento.
-// c-Solo las posiciones pares
-// d-todos los elementos
-// e-todos los elementos menos el último 
-// f-Todos los elementos menos el primero
-// g-todos los elementos separados por “*”.
-// h-Solicitar al usuario un nuevo artista para reemplazar al último ingresado.
