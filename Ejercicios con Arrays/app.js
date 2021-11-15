@@ -53,12 +53,45 @@ console.log(ciudades[prompt("Escriba un número del 1 al 10") - 1]);
 
 // a:
 let quitarCiudades = prompt("Ingrese un numero")
-
 ciudades.splice(0, quitarCiudades);
 console.log(ciudades); // ej: ingresando 4 muestra desde NY hasta Roma 
  
 // b:
-
 quitarCiudades = ciudades.splice(-quitarCiudades);
 console.log(ciudades); // ej: ingresando 4 muestra Bs As hasta La Paz
 
+// 4) Crear un array de 8 posiciones con nombres de artistas musicales (soluciones sub-ejericios de la A a la H abajo)
+
+var artistas = [
+  "Piazzolla",
+  "Troilo",
+  "Pugliese",
+  "Di Sarli",
+  "Canaro",
+  "D'Arienzo",
+  "Mores",
+  "Komatsu",
+];
+
+/*a*/ alert("Longitud: " + artistas.length);
+
+/*b*/ alert("Ultimo elemento: " + artistas[artistas.length - 1]);
+
+/*c*/ for (var i = 0; i <= artistas.length - 1; i = i + 2) {
+  alert("Posiciones pares: " + artistas[i]);
+}
+
+/*d*/ alert("Todos los elementos: " + "\n" + artistas.join("\n"));
+
+/*e*/ artistas.pop();
+alert("Todos los elementos menos el último: " + "\n" + artistas.join("\n"));
+
+/*f*/ artistas.shift();
+alert("Todos los elementos menos el primero: " + "\n" + artistas.join("\n"));
+
+/*g*/ alert("Todos los elementos separados por (*): " + artistas.join("*"));
+
+/*h*/ artistas.pop();
+let nuevoArtista = prompt("Ingrese nuevo artista");
+artistas.push(nuevoArtista);
+alert("El nuevo artista que reemplaza al último es: " + "\n" + artistas.join("\n"));
