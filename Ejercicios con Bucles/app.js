@@ -79,7 +79,46 @@ do {
 } while(primerN < (segundoN-1));
 */
 
+// 8) Preguntar al usuario cuántos números quiere ingresar. Luego solicitar que los ingrese uno por uno y mostrar cuál es el mayor
+/*
+let cuantosNros = prompt("Cuantos números desea ingresar?");
+let nrosTotal = [];
+let i = 1;
 
+do {
+  nroUnidad = prompt("Ingrese un número");
+  nrosTotal.push(nroUnidad);
+  i++;
+} while (i <= cuantosNros);
+
+alert("El mayor número de los ingresados es: " + Math.max(...nrosTotal));
+*/
+
+// 9) Solicitar al usuario que ingrese la cantidad de números que quiera, uno por uno, y mostrar cual es el menor de todos.
+/*
+let totalNumeros = [];
+let continuar;
+let numero;
+do {
+  numero = parseInt(prompt("Ingrese un número"));
+  totalNumeros.push(numero);
+  continuar = confirm("Desea continuar?");
+} while (continuar == true);
+
+alert("El menor de los números ingresados es: " + Math.min(...totalNumeros));
+*/
+
+// 10) Solicitar al usuario que ingrese un número y mostrar, en una sola cadena de string, la cantidad de asteriscos que indique en el número. (Ejemplo: 5, “*****”.)
+/*
+let num = parseInt(prompt("Ingrese un número"));
+let string = "";
+
+for (let i = 1; i <= num; i++) {
+  string += "*";
+}
+
+alert(string);
+*/
 
 // 11) Realizar un programa que pida la base y el exponente y calcule la potencia
 /*
