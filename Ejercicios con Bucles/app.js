@@ -179,7 +179,7 @@ for (let i = 0; i < numero; i++){
 */
 
 // 15) Solicitar al usuario que ingrese una lista de supermercado y al final mostrar todos los items separados por comas. 
-
+/*
 alert("Prepare su lista de supermercado!");
 let articulo;
 let lista = [];
@@ -194,4 +194,16 @@ do {
 } while (continuar == true);
 
 alert(lista.join());
+*/
 
+// 16) Solicitar al usuario que ingrese números. Finalizar cuando ingrese un número múltiplo de 3. Mostrar todos los números ingresados.
+
+let allNumbers = [];
+let number;
+
+while (number % 3 != 0) {
+  number = prompt("Ingrese un número");
+  allNumbers.push(" " + number);
+}
+
+alert(allNumbers);
